@@ -2,7 +2,7 @@
   "name": "Start on Heroku: Python",
   "description": "A barebones Python app, which can easily be deployed to Heroku.",
   "image": "heroku/python",
-  "repository": "https://github.com/Mwapsam/fazo",
+  "repository": "https://github.com/Mwapsam/final.git",
   "keywords": ["python", "django" ],
   "addons": [ "heroku-postgresql" ],
   "env": {
@@ -14,7 +14,7 @@
   "environments": {
     "test": {
       "scripts": {
-        #"test-setup": "python manage.py collectstatic --noinput",
+        "test-setup": "python manage.py collectstatic --noinput",
         "test": "python manage.py test"
       }
     }
