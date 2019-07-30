@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_content %}
+<h1>{{ profile.title }}</h1>
+<div class="row">
+    <div class="col-md-8">
+        <img src="{% static profile.image %}" alt="" width="100%">
+    </div>
+    <div class="col-md-4">
+        <h5>About:</h5>
+        <p>{{ profile.description }}</p>
+        <br>
+        <h5>Education:</h5>
+        <p>{{ profile.education }}</p>
+    </div>
+</div>
+
+{% endblock %}
